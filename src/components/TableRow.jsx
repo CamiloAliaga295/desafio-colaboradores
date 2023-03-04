@@ -2,7 +2,7 @@ import React from 'react'
 
 const TableRow = ({user}) => {
   
-const {nombre, id, correo } = user
+const {nombre, correo } = user
   
     return (
    

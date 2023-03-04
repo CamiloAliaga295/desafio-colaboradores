@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 import Error from './Error'
 import {getId} from '../helpers/getId'
 
@@ -43,11 +43,21 @@ setCorreo('')
 {error && <Error message='Todos los datos son obligatorios' /> }
 <div className='mb-3'>
     <label htmlFor="nombre">Nombre:</label>
-    <input className='form-control w-50' id="nombre" type="text" value={nombre} onChange={e=>setNombre(e.target.value)}/>
+    <input 
+    className='form-control w-50'  
+    type="text" 
+    value={nombre} 
+    onChange={e=>setNombre(e.target.value)}
+    />
 </div>
 <div className='mb-3'>
     <label htmlFor="correo">Correo:</label>
-    <input className='form-control w-50' id="nombre" type="email"  value={correo} onChange={e=>setCorreo(e.target.value)}/>
+    <input 
+    className='form-control w-50'  
+    type="email"  
+    value={correo} 
+    onChange={e=>setCorreo(e.target.value)}
+    />
 </div>
 <button className='btn btn-success'>Agregar</button>
 
